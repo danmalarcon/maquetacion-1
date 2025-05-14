@@ -1,13 +1,84 @@
-# React + Vite
+# 📦 app-maquetacion-1
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Proyecto de maquetación con React
 
-Currently, two official plugins are available:
+## 📋 Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+"app-maquetacion" es un proyecto creado con **React** para desarrollar una maquetación web, de una actividad educativa.
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologías
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# maquetacion-1
+- ⚛️ **React** - Biblioteca para interfaces de usuario
+- 💅 **CSS/Styled Components** - Estilos personalizados
+- 📄 **HTML5** - Estructura semántica
+- 📦 **Vite** - Entorno de desarrollo optimizado
+
+## 📌 Características principales
+ 
+✅ Código reutilizable por componentes.  
+✅ Configuración optimizada con **Vite**.  
+✅ Estructura escalable para facilitar el mantenimiento.  
+
+## 📂 Estructura del proyecto
+
+```
+maqueta-1/
+├── public/
+├── src/
+│    ├── components/     # Componentes reutilizables
+│    ├── pages/          # Páginas principales
+│    ├── assets/         # Imágenes y recursos
+│    └── App.jsx         # Componente principal
+└── package.json
+```
+
+## 🚀 Instalación y ejecución
+
+1. **Clonar el repositorio:**
+
+```bash
+git clone https://github.com/danmalarcon/maquetacion-1.git
+```
+
+2. **Entrar en el directorio del proyecto:**
+
+```bash
+cd maquetacion-1
+```
+
+3. **Instalar dependencias:**
+
+```bash
+npm install
+```
+
+4. **Iniciar el servidor de desarrollo:**
+
+```bash
+npm run dev
+```
+
+✅ El proyecto estará disponible en `http://localhost:5173`
+
+
+## 🤝 Contribuciones
+
+¡Las contribuciones son bienvenidas! Si deseas colaborar, sigue estos pasos:
+
+1. Haz un fork del proyecto.
+2. Crea una rama (`git checkout -b feature/nueva-feature`).
+3. Realiza los cambios y haz un commit (`git commit -m 'Añadir nueva funcionalidad'`).
+4. Haz push a tu rama (`git push origin feature/nueva-feature`).
+5. Abre un Pull Request.
+
+## 📧 Contacto
+
+Creado con ❤️ por [@danmalarcon](https://github.com/danmalarcon). ¡No dudes en contactarme si tienes alguna pregunta o sugerencia!
+
+---
+
+⭐️ ¡Si te gusta este proyecto, dale una estrella al repositorio!
+
+## 📚 Créditos
+
+Este proyecto fue creado utilizando la plantilla oficial de [React + Vite](https://vitejs.dev/).
