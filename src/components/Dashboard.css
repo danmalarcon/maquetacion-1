@@ -1,0 +1,494 @@
+.news-list li {
+  margin-bottom: 8px;
+}/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  font-family: 'Arial', sans-serif;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Dashboard container */
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  
+}
+
+/* Sidebar izquierdo */
+.sidebar {
+  width: 150px;
+  background-color: #f5f5f5;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #ddd;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 20px;
+  color: #333;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+/* Botones del menú */
+.nav-button {
+  width: 100%;
+  padding: 8px 5px;
+  background-color: transparent;
+  border: 1px solid #333;
+  color: #333;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background-color 0.2s;
+  font-size: 14px;
+}
+
+.nav-button:hover {
+  background-color: #eee;
+}
+
+/* Contenido principal */
+.content {
+  flex: 1;
+  background-color: #fff;
+  padding: 30px;
+  margin-left: 150px; /* Igual al ancho del sidebar */
+  width: 100%;
+}
+
+.content h1 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.content-section {
+  padding: 20px 0;
+  width: 100%;
+}
+
+.content-section h2 {
+  margin-bottom: 15px;
+}
+
+.news-list {
+  list-style-type: none;
+  margin-left: 40px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.content h1, .content h2, .content p {
+  text-align: center;
+}
+
+.platform-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.platform-link strong {
+  margin-right: 5px;
+}
+
+/* Estilos base (mantén los que ya tienes) */
+
+/* Añade estos nuevos estilos al final de tu Dashboard.css */
+
+/* Estilos generales mejorados */
+.sidebar-title {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.nav-button.active {
+  background-color: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+
+.logout-button {
+  margin-top: 2rem;
+  background-color: #e74c3c;
+  color: white;
+  border-color: #e74c3c;
+}
+
+.logout-button:hover {
+  background-color: #c0392b;
+}
+
+.section-main-title {
+  color: #2c3e50;
+  margin-top: 3rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.section-title {
+  color: #3498db;
+  margin: 1.5rem 0;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+}
+
+/* Estilos para la sección Home */
+.welcome-title {
+  color: #2c3e50;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.welcome-card {
+  background-color: #f8f9fa;
+  border-left: 4px solid #3498db;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 0 8px 8px 0;
+}
+
+.news-container {
+  margin-bottom: 2rem;
+}
+
+.news-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.news-card:hover {
+  transform: translateY(-3px);
+}
+
+.news-card h3 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.news-date {
+  display: block;
+  font-size: 0.8rem;
+  color: #7f8c8d;
+  margin-top: 0.5rem;
+}
+
+.quick-access {
+  margin-top: 2rem;
+}
+
+.access-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.access-button {
+  padding: 0.8rem 1.5rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.access-button:hover {
+  background-color: #2980b9;
+}
+
+/* Estilos para la sección Servicios */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.service-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.service-card h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.styled-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.styled-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.styled-list li:last-child {
+  border-bottom: none;
+}
+
+.modality-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.tag.virtual {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.tag.presencial {
+  background-color: #e8f5e9;
+  color: #388e3c;
+}
+
+.tag.hibrido {
+  background-color: #fff3e0;
+  color: #ffa000;
+}
+
+.enroll-button {
+  padding: 0.8rem 1.5rem;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  margin: 1rem 0;
+  transition: background-color 0.2s;
+}
+
+.enroll-button:hover {
+  background-color: #27ae60;
+}
+
+.info-text {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  text-align: center;
+}
+
+/* Estilos para la sección Contacto */
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.contact-form {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.submit-button {
+  padding: 0.8rem 1.5rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #2980b9;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.info-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.info-card h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ecf0f1;
+  padding-bottom: 0.5rem;
+}
+
+.info-card p {
+  margin: 0.5rem 0;
+}
+
+.map-placeholder {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.map {
+  height: 250px;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7f8c8d;
+  margin-top: 2rem;
+}
+
+/* Estilos para la sección Acerca de */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.history-section,
+.mission-vision,
+.gallery-section,
+.team-section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.mission-vision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.mission,
+.vision {
+  padding: 1rem;
+}
+
+.mission {
+  border-right: 1px solid #ecf0f1;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.gallery-item {
+  height: 150px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7f8c8d;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.member-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7f8c8d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .mission-vision {
+    grid-template-columns: 1fr;
+  }
+  
+  .mission {
+    border-right: none;
+    border-bottom: 1px solid #ecf0f1;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
