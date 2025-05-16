@@ -3,6 +3,20 @@ import './Dashboard.css';
 
 const Dashboard = ({ onLogout }) => {
   const [currentView, setCurrentView] = useState('home');
+  const [showInscripcion, setShowInscripcion] = useState(false);
+  const [cursos] = useState([
+    { nombre: 'Programación Básica' },
+    { nombre: 'Diseño Web' },
+    { nombre: 'Base de Datos' },
+    { nombre: 'Inteligencia Artificial' }
+  ]);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Aquí puedes manejar el envío del formulario (mostrar alerta, limpiar campos, etc.)
+    alert('¡Inscripción enviada!');
+    setShowInscripcion(false);
+  };
 
   return (
     <div className="dashboard-container">
@@ -113,8 +127,35 @@ const Dashboard = ({ onLogout }) => {
 
               <div className="service-card">
                 <h2>Inscripciones</h2>
-                <button className="enroll-button">Inscribirse a Cursos</button>
+                <button className="enroll-button" onClick={() => setShowInscripcion(!showInscripcion)}>
+                  Inscribirse a Cursos
+                </button>
                 <p className="info-text">Período de inscripción abierto hasta el 15/08</p>
+                 {showInscripcion && (
+                  <form className="inscription-form" onSubmit={handleSubmit} style={{ marginTop: '15px' }}>
+                    <input
+                      type="text"
+                      name="nombre"
+                      placeholder="Nombre completo"
+                      required
+                    />
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Correo electrónico"
+                      required
+                    />
+                    <select name="curso" required defaultValue="">
+                      <option value="" disabled>Selecciona un curso</option>
+                      {cursos.map((c, i) => (
+                        <option key={i} value={c.nombre}>{c.nombre}</option>
+                      ))}
+                    </select>
+                    <button type="submit" className="submit-button" style={{ marginTop: '8px' }}>
+                      Enviar
+                    </button>
+                  </form>
+                 )}
               </div>
             </div>
           </div>
