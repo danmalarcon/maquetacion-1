@@ -23,9 +23,9 @@ function App() {
           onLoginSuccess={() => setIsAuthenticated(true)}
         />
       ) : (
-        <RegisterForm 
-          onSwitch={() => setIsLogin(true)} // Esto ya hace que vuelva al login
-          onRegisterSuccess={() => setIsLogin(true)} // Modificado para solo volver al login
+        <RegisterForm
+          onSwitch={() => setIsLogin(true)}
+          onRegisterSuccess={() => setIsAuthenticated(true)}  // Aquí autenticamos y vamos directo al Dashboard
         />
       )}
     </div>
